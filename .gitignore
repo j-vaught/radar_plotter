@@ -1,0 +1,12 @@
+# Build outputs
+csv_to_png
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dylib
+
+# OS cruft
+.DS_Store
