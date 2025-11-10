@@ -19,7 +19,7 @@ g++ -std=c++17 csv_to_png.cpp stb_image_write.cpp -o csv_to_png
 
 ## Sample Data
 
-The repository ships with `samples/20250915_134512_925.csv` pulled straight from `/Users/jacobvaught/Downloads/RequestedPatterns/data_pattern14/`.
+The repository ships with `samples/20250915_134537_352.csv` pulled straight from `/Users/jacobvaught/Downloads/RequestedPatterns/data_pattern14/`.
 
 Each row starts with five metadata columns followed by hundreds of echo intensity samples:
 
@@ -35,7 +35,7 @@ Each row starts with five metadata columns followed by hundreds of echo intensit
 First data row (truncated):
 
 ```csv
-1,496,3,60,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,252,140,0,0,0,0,20,28,36,36,44,28,8,0,...
+1,496,3,65,0,0,0,0,0,0,0,0,0,0,0,0,0,28,252,252,252,252,252,252,252,252,252,252,252,164,28,0,8,64,44,36,36,44,104,188,252,252,252,140,104,20,0,...
 ```
 
 ## Example Output
@@ -43,9 +43,9 @@ First data row (truncated):
 Running the converter locally:
 
 ```bash
-./csv_to_png samples/20250915_134512_925.csv samples/20250915_134512_925.png
+./csv_to_png samples/20250915_134537_352.csv samples/20250915_134537_352.png
 ```
 
-Generated PNG preview: ![Rendered sweep](samples/20250915_134512_925.png)
+Generated PNG preview: ![Rendered sweep](samples/20250915_134537_352.png)
 
 Feel free to drop additional CSVs into `samples/` to document other captures. Keep builds out of git—`.gitignore` already excludes the compiled `csv_to_png` binary.
